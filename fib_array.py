@@ -14,8 +14,8 @@ def fib(n):
 
 
 n = 8
-start = time.time()
+start = time.perf_counter()
 result = fib(n)
-end = time.time()
+end = time.perf_counter()
 
 print(f"fib(n) = {fib(n)} \n Таймер {end - start:.6f} c.")
