@@ -9,10 +9,10 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 
 
-n = 30
-start = time.time()
+n = 6
+start = time.perf_counter()
 result = fib(n)
-end = time.time()
+end = time.perf_counter()
 
 print(f"fib(n) = {result} \n Таймер: {end - start:.6f} с.")
 
